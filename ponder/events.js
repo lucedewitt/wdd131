@@ -19,19 +19,19 @@ function newTask() {
         <span data-function="complete">✅</span>
       </div>
     </li>`
-}
+};
 
 function manageTasks(e) {
-    console.log(e);
   // using the event find the li element closest to what they clicked
   const parent = e.target.closest("li");
     // did they click the delete or complete icon?
-  if (e.target.getAttribute('data-function') === "delete") {
-    parent.remove();
-  } else if (e.target.getAttribute('data-function') === "complete") {
+    if (e.target.getAttribute('data-function') === "delete") {
+      parent.remove();
+    }
+    if (e.target.getAttribute('data-function') === "complete") {
     parent.classList.toggle('strike');
-  }
-}
+    }
+};
 
 // Add your event listeners here
 document.querySelector('#submitTask').addEventListener('click', newTask);
