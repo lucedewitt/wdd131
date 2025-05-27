@@ -71,7 +71,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     text-align: center;
-    grid-row-gap: 30px;
+    grid-row-gap: 40px;
 }
 
 .side-content {
