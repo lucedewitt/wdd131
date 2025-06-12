@@ -24,13 +24,15 @@ function submitHandler(event) {
 	const currentDate = new Date()
 	if ('20' + this.expYear.value < currentDate.getFullYear()) {
 	errorMsg += 'Card is expired\n'
-	} else if (this.expMonth.value < currentDate.getMonth()) {
+	} else if (this.expMonth.value < currentDate.getMonth()+1) {
 	errorMsg += 'Card is expired\n'
 	}
 	if (errorMsg !== '') {
 		// there was an error. stop the form and display the errors.
 		displayError(errorMsg)
 		return false
+	} else {
+		document.querySelector('successMsg').textContent = 'Success! We recieved your info.'
 	}
 	return true
 }
