@@ -50,6 +50,11 @@ hr {
     margin: 20px 0 20px 0;
 }
 
+.recipe-layout {
+    display: flex;
+    flex-direction: column;
+}
+
 .recipe {
     display: flex;
     flex-direction: column;
@@ -64,9 +69,7 @@ img {
     max-width: 100%;
 }
 
-button {
-    height: 35px;
-    width: 100px;
+.recipe button {
     margin-top: 5px;
     font-size: 20px;
     background-color: white;
@@ -83,7 +86,7 @@ h2 {
     margin-bottom: 0px;
 }
 
-.rating {
+.rating-container {
     margin-bottom: 20px;
 }
 
@@ -116,7 +119,8 @@ a {
     }
 
     .recipe img {
-        max-width: 300px;
+        width: 300px;
+        height: 300px;
         margin-right: 10px;
     }
 

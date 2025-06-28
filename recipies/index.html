@@ -7,7 +7,7 @@
     <meta name="description" content="Website with recipes">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipies.css">
-    <script src="recipies.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <meta property="og:title" content="Recipe Website">
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Recipe Website">
@@ -24,29 +24,11 @@
             <label for="search"></label>
             <div id="searchbox">
                 <input id="search" name="search" placeholder="Find a recipe">
-                <img src="images/images/search.svg" alt="search">
+                <img src="images/images/search.svg" alt="search" class="search">
             </div>
         </form>
         <hr>
-        <section class="recipe">
-            <img src="images/images/apple-crisp.jpg" alt="apple crisp">
-            <div class="recipe-content">
-                <button>dessert</button>
-                <h2>Apple Crisp</h2>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream</p>
-            </div>
-        </section>
+        <section class="recipe-layout"></section>
     </main>
     <footer>
         <div class="social">
@@ -57,5 +39,6 @@
         </div>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     </footer>
+    <script src="recipies.js"></script>
 </body>
 </html>
